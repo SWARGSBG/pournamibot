@@ -36,7 +36,7 @@ def ban(bot: Bot, update: Update, args: List[str]) -> str:
         member = chat.get_member(user_id)
     except BadRequest as excp:
         if excp.message == "User not found":
-            message.reply_text("ഇങ്ങനെ ഒരാളെ എനിക്ക് കണ്ടെത്താൻ സാധിച്ചില്ല...")
+            message.reply_text("ഇങ്ങനെ ഒരാള് ഈ ഭൂലോകത്ത് ഇല്ല . ")
             return ""
         else:
             raise
@@ -46,7 +46,7 @@ def ban(bot: Bot, update: Update, args: List[str]) -> str:
         return ""
 
     if user_id == bot.id:
-        message.reply_text("ഞാൻ എന്നെത്തന്നെ ബാൻ ചെയ്യാനോ നടക്കുന്ന കാര്യം വല്ലതും പറ... ")
+        message.reply_text("ഞാൻ എന്നെത്തന്നെ ബാൻ ചെയ്യാനോ ??? നടക്കുന്ന കാര്യം വല്ലതും പറ... ")
         return ""
 
     log = "<b>{}:</b>" \
@@ -71,13 +71,13 @@ def ban(bot: Bot, update: Update, args: List[str]) -> str:
     except BadRequest as excp:
         if excp.message == "Reply message not found":
             # Do not reply
-            message.reply_text('ബാൻ ചെയ്തിട്ടുണ്ട്...!', quote=False)
+            message.reply_text('ചെല്ലക്കിളി ഇത് വരെവന്ന സ്ഥിതിക്ക് ഞാൻ അവാർഡ് ആയി ഒരു ബാൻ തരാം . കൊണ്ട് പോയ്ക്കൊളുക', quote=False)
             return log
         else:
             LOGGER.warning(update)
             LOGGER.exception("ERROR banning user %s in chat %s (%s) due to %s", user_id, chat.title, chat.id,
                              excp.message)
-            message.reply_text("എനിക്കയാളെ ബാൻ ചെയ്യാൻ സാധിക്കില്ല..")
+            message.reply_text("നടക്കുന്ന കാര്യോം വല്ലതും പറ")
 
     return ""
 
