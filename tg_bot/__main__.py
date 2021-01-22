@@ -47,8 +47,7 @@ It took lots of work for [my creator](t.me/oru_bhadrakali_daasan) to get me to w
 motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
 (see his bio!). He's just a poor student, so every little helps!
 """
- tg_bot = "https://telegra.ph/file/0d9c3247b058dd8d92aff.jpg"
- 
+tg_bot = "https://telegra.ph/file/9feb13073627da226e618.mp4"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -135,8 +134,9 @@ def start(bot: Bot, update: Update, args: List[str]):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_photo tg_bot,
-              .effective_message.reply_text
+            update.effective_message.reply_photo,
+                tg_bot,
+            update.effective_message.reply_text,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID)),
                 parse_mode=ParseMode.MARKDOWN)
     else:
