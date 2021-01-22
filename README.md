@@ -1,5 +1,5 @@
 ## പൗർണമി
-![logo](https://telegra.ph/file/77d7eba62f4ee873af36b.jpg)
+![logo](https://telegra.ph/file/0d9c3247b058dd8d92aff.jpg)
 💌 Reach me on Telegram [pournamibot](https://t.me/pournamibot)
 
 this is a extract copy of @missrosebot without some features .code edited by oru_bhadrakali_daasan.
