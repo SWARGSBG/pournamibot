@@ -24,10 +24,7 @@ PM_START_TEXT = """
 
 """
 
-HELP_STRINGS = """ 
-img -{pournamibot}(https://telegra.ph/file/178c7f2cf1ddf589b6510.jpg)
-
-നമസ്കാരം ! എന്റെ പേര് *{}*.
+HELP_STRINGS = """നമസ്കാരം ! എന്റെ പേര് *{}*.
 *Main* ലഭ്യമായ commandകൾ:
  - /start: Botനെ Start ചെയ്യാൻ...
  - /help: ഈ മെസ്സേജ് നിങ്ങളുടെ PM വരാൻ....
@@ -35,17 +32,13 @@ img -{pournamibot}(https://telegra.ph/file/178c7f2cf1ddf589b6510.jpg)
  - /donate: സംഭാവന നൽകുന്നതിനെക്കുറിച്ചുള്ള വിവരങ്ങൾ അറിയാൻ!
  - /settings:
    - in PM:നിങ്ങൾ സെറ്റ് ചെയ്തിട്ടുള്ള SETTINGS എന്തൊക്കെ ആണെന്ന് അറിയാൻ....
-   - in a group:ഗ്രൂപ്പിൽ കൊടുത്താലും  PMൽ settings വരുന്നതാണ്....
-
-{}
-And the following:
-""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nഈ പറഞ്ഞിരിക്കുന്ന commandകൾ എല്ലാം  / അല്ലെങ്കിൽ ! വെച്ച് ഉപയോഗിക്കാവുന്നതാണ്...\n")
+   - in a group:ഗ്രൂപ്പിൽ കൊടുത്താലും  PMൽ settings വരുന്നതാണ്...."""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/sonoflars) to get me to where I am now, and every donation helps \
+It took lots of work for [my creator](t.me/Aniyathikutteede_Chechikutty) to get me to where I am now, and every donation helps \
 motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
 (see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+"""
 
 IMPORTED = {}
 MIGRATEABLE = []
